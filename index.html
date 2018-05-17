@@ -1,156 +1,196 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="style/style.css" type="text/css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-        crossorigin="anonymous">
+    <title>Portfolio</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style/style.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+
+    <!-- Font awesomme css -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-    <title>Alexandre ADOLPHE</title>
 </head>
 
 <body>
+
     <!-- debut header -->
     <header>
-        <div class="container-fluid header_container">
-            <div class="container text-center header_name">
-                <div class="col-lg-8 offset-lg-2">
-                    <h1>Alexandre ADOLPHE</h1>
-                </div>
+        <div class="overlay"></div>
+        <div class="container text-center mx-auto d-flex flex-column header_content justify-content-center position-relative">
+            <h1 class="text-white text-uppercase">Welcome !</h1>
+            <div class="d-flex align-items-center justify-content-center">
+                <h3 class="text-white text-uppercase">Alexandre ADOLPHE /</h3>
+                <h3 class="text-white text-uppercase pl-2">Web - Developper</h3>
             </div>
-            <div class="container-fluid text-center header_slider">
-                <div class="col-lg-8 offset-lg-2">
-                    <div id="slider_header" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <h1>i'm
-                                    <span>a crazy</span> coder</h1>
-                            </div>
-                            <div class="carousel-item">
-                                <h1>i'm
-                                    <span>a Web</span> developper</h1>
-                            </div>
-                            <div class="carousel-item">
-                                <h1>by
-                                    <span>simplon</span> reunion</h1>
-                            </div>
-                        </div>
+        </div>
+        <div class="container-fluid position-relative slider_content">
+            <div id="carouselId" class="carousel slide slider" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active text-center">
+                        <h1 class="text-white text-uppercase">I'm <span class="yellow">a crazy</span> coder</h1>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <h1 class="text-white text-uppercase">I'm <span class="yellow">a web</span> developper</h1>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <h1 class="text-white text-uppercase">By <span class="yellow">simplon</span> reunion</h1>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="container-fluid scroll_down_container d-flex align-items-center justify-content-center">
+            <i class="fas fa-chevron-down fa-3x text-white"></i>
         </div>
     </header>
     <!-- fin header -->
 
-    <!-- debut menu pc -->
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-        <a href="#" class="navbar-brand">
-            <img src="img/logo.png" alt="logo" class="img-fluid" width="40" height="40">
-            <span>Portfolio</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_pc" aria-controls="navbar_pc" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar_pc">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a href="" class="nav-link">
-                        Accueil
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">
-                        Bio
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">
-                        Portfolio
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">
-                        Contact
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!-- fin menu pc -->
-
-    <!-- debut main -->
-    <main id="main">
-        <section id="bio">
-            <article class="container-fluid">
-                <div class="col-lg-4 offset-lg-4 text-center title_bio">
-                    <h1><i class="fas fa-code"></i> Bio</h1>
+    <!-- debut navbar pc -->
+    <section id="navabar-pc">
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-md bg-light fixed-top">
+                <div class="container">
+                    <a href="#" class="navbar-brand brand text-dark font-weight-bold">Web - Developper</a>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark font-weight-bold">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark font-weight-bold">A propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark font-weight-bold">Parcour</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark font-weight-bold">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark font-weight-bold">Contact</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-lg-8 offset-lg-1">
-                    <div class="vertical_line">
-                        <div class="circle_timeline_graduation"><i class="fas fa-graduation-cap"></i></div>
-                        <div class="circle_timeline_simplon">
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                Labore hic optio, asperiores facere libero ipsa tenetur, eius, 
-                                rem explicabo architecto eum beatae! Voluptate, quibusdam assumenda 
-                                debitis ullam eaque harum quam!
-                            </p>
-                        </div>
-                        <div class="circle_timeline_cci">
-                                <p>
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                    Labore hic optio, asperiores facere libero ipsa tenetur, eius, 
-                                    rem explicabo architecto eum beatae! Voluptate, quibusdam assumenda 
-                                    debitis ullam eaque harum quam!
-                                </p>
-                        </div>
-                        <div class="circle_timeline_univ">
-                                <p>
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                    Labore hic optio, asperiores facere libero ipsa tenetur, eius, 
-                                    rem explicabo architecto eum beatae! Voluptate, quibusdam assumenda 
-                                    debitis ullam eaque harum quam!
-                                </p>
-                        </div>
+            </nav>
+        </div>
+    </section>
+    <!-- fin navbar-pc -->
+
+    <!-- menu mobile a faire -->
+    <!-- menu mobile a faire -->
+
+    <!-- debut about -->
+    <section id="about">
+        <div class="container">
+            <div class="col-6 offset-3 text-center">
+                <h1 class="text-uppercase yellow pb-4"><i class="fas fa-user"></i> A-propos</h1>
+                <p class="text-muted">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ut odit ipsa excepturi inventore laborum repudiandae quis harum iusto 
+                    eaque quam! Incidunt assumenda.
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-5">
+                    <div class="text-center">
+                        <h2 class="text-uppercase yellow"><i class="fas fa-cogs"></i> competences</h2>
+                    </div>
+                    <h2 class="text-uppercase pt-4">html 5</h2>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
+                            style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">80%</div>
+                    </div>
+                    <h2 class="text-uppercase pt-4">ccs 3</h2>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
+                            style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">60%</div>
+                    </div>
+                    <h2 class="text-uppercase pt-4">bootstrap 4</h2>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
+                            style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">70%</div>
+                    </div>
+                    <h2 class="text-uppercase pt-4">Javascript</h2>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
+                            style="width: 5%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">5%</div>
+                    </div>
+                    <h2 class="text-uppercase pt-4">node js</h2>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
+                            style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">0%</div>
+                    </div>
+                    <h2 class="text-uppercase pt-4">my sql</h2>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
+                            style="width: 10%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">10%</div>
                     </div>
                 </div>
-            </article>
-        </section>
-    </main>
+                <div class="col-5 offset-2 text-center">
+                    <h2 class="text-uppercase yellow"><i class="fas fa-list"></i> experiences</h2>
+                    <div class="d-flex justify-content-around pt-4">
+                        <h4>2018 - ****</h4>
+                        <h4><span>/*/</span></h4>
+                        <h4>Entreprise</h4>
+                    </div>
+                    <hr>
+                    <p class="text-muted">Contrat Professionalisation - Developpeur Web / Logiciel</p>
+                    <hr>
+                    <div class="d-flex justify-content-around pt-4">
+                        <h4>2015 - 2017</h4>
+                        <h4><span>/*/</span></h4>
+                        <h4>AtoutPc's</h4>
+                    </div>
+                    <hr>
+                    <p class="text-muted">Contrat Alternance - Technicien Service Aprés Ventes / Technicien Réseaux</p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fin about -->
 
+    <!-- debut parcour -->
+    <section id="parcour">
+        <div class="overlay_parcour container-fluid d-flex align-items-center">
+            <div class="col-12 d-flex text-center p-0">
+                <div class="img_formation col-2 offset-1">
+                    <img src="img/simplon.png" alt="simplon" class="img-fluid">
+                    <p class="text-white">2018 - POEC Developpeur Web</p>
+                </div>
+                <div class="img_formation col-2">
+                    <img src="img/cci.png" alt="simplon" class="img-fluid">
+                    <p class="text-white">2018 - POEC Developpeur Web</p>
+                </div>
+                <div class="img_formation col-2">
+                    <img src="img/fac.png" alt="simplon" class="img-fluid">
+                    <p class="text-white">2018 - POEC Developpeur Web</p>
+                </div>
+                <div class="img_formation col-2">
+                    <img src="img/lyc.png" alt="simplon" class="img-fluid">
+                    <p class="text-white">2018 - POEC Developpeur Web</p>
+                </div>
+                <div class="img_formation col-2">
+                    <img src="img/clg.png" alt="simplon" class="img-fluid">
+                    <p class="text-white">2018 - POEC Developpeur Web</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="js/mains.js"></script>
 </body>
 
 </html>
