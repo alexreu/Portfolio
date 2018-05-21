@@ -29,7 +29,7 @@
     <!-- fin loader -->
 
     <!-- debut header -->
-    <header id="header">
+    <header id="header" role="banner">
         <div class="overlay"></div>
         <div class="container text-center mx-auto d-flex flex-column header_content justify-content-center position-relative">
             <h1 class="text-white text-uppercase">Welcome !</h1>
@@ -58,13 +58,13 @@
         </div>
     </header>
     <!-- fin header -->
-    <main>
+    <main role="main">
         <!-- debut navbar pc -->
         <div class="container-fluid p-0 sticky-top navbar_pc">
-            <nav class="navbar navbar-expand-md bg-light" id="navbarPc">
+            <nav class="navbar navbar-expand-md bg-light" id="navbarPc" role="navigation">
                 <div class="container">
                     <a href="" class="navbar-brand brand">
-                        <img src="img/logo_1.png" alt="logo" width="90" height="70">
+                        <img src="img/logo_1.png" alt="logo" width="70" height="50">
                     </a>
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
@@ -77,10 +77,10 @@
                             <a href="#parcour" class="nav-link font-weight-bold text-uppercase nav_link_color">Parcours</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link font-weight-bold text-uppercase nav_link_color">Portfolio</a>
+                            <a href="#portfolio" class="nav-link font-weight-bold text-uppercase nav_link_color">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link font-weight-bold text-uppercase nav_link_color">Contact</a>
+                            <a href="#contact" class="nav-link font-weight-bold text-uppercase nav_link_color">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -94,8 +94,10 @@
         <!-- debut about -->
         <section id="about" data-spy="scroll" data-target="#navbarPc" data-offset="0">
             <div class="container">
-                <div class="col-6 offset-3 text-center">
-                    <h1 class="text-uppercase yellow pb-4 pt-4 font-weight-bold about_title"><i class="fas fa-user"></i> à-propos</h1>
+                <div class="col-md-4 offset-md-4 text-center">
+                    <h1 class="text-uppercase yellow pb-4 pt-4 pl-2 pr-2 font-weight-bold about_title"><i class="fas fa-user"></i> à-propos</h1>
+                </div>
+                <div class="col-md-6 text-center mx-auto pt-2">
                     <p class="text-muted">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Ut odit ipsa excepturi inventore laborum repudiandae quis harum iusto 
@@ -220,7 +222,7 @@
                 </div>
                 <article class="row pt-4">
                     <div class="col-md-4 p-0 portfolio_img">
-                        <img src="img/portfolio_1.PNG" alt="portfolio_1" class="img-fluid">
+                        <img src="img/portfolio_1.jpg" alt="portfolio_1" class="img-fluid">
                         <div class="d-flex align-items-center justify-content-center img_zoom"data-toggle="modal" data-target="#modal_portfolio1">
                             <p>
                                 <i class="text-white fas fa-search-plus"></i>
@@ -230,7 +232,7 @@
                     </div>
                     <!-- debut modal portfolio 1  -->
                     <div class="modal fade" id="modal_portfolio1" tabindex="-1" role="dialog" aria-labelledby="modal_portfolio1_title" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
                                   <h5 class="modal-title" id="modal_portfolio1_title">Organic. Web</h5>
@@ -239,21 +241,21 @@
                                   </button>
                                 </div>
                                 <div class="modal-body">
-                                    <img src="img/portfolio_1.PNG" alt="portfolio" class="img-fluid">
+                                    <img src="img/portfolio_1.jpg" alt="portfolio" class="img-fluid">
                                     <div class="pt-4 text-center">
                                         <a class="btn btn-dark" href="#" role="button">Voir le site</a>
                                         <a class="btn btn-dark" href="#" role="button">J'aime <i class="far fa-thumbs-up"></i></a>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- fin modal portfolio 1 -->
                     <div class="col-md-4 p-0 portfolio_img">
-                        <img src="img/portfolio_1.PNG" alt="portfolio_1" class="img-fluid">
+                        <img src="img/portfolio_1.jpg" alt="portfolio_1" class="img-fluid">
                         <div class="d-flex align-items-center justify-content-center img_zoom"data-toggle="modal" data-target="#modal_portfolio2">
                             <p>
                                 <i class="text-white fas fa-search-plus"></i>
@@ -262,7 +264,7 @@
                         </div>
                         <!-- debut modal portfolio 2  -->
                         <div class="modal fade" id="modal_portfolio2" tabindex="-1" role="dialog" aria-labelledby="modal_portfolio2_title" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                     <h5 class="modal-title" id="modal_portfolio2_title">Organic. Web</h5>
@@ -271,14 +273,14 @@
                                     </button>
                                     </div>
                                     <div class="modal-body">
-                                        <img src="img/portfolio_1.PNG" alt="portfolio" class="img-fluid">
+                                        <img src="img/portfolio_1.jpg" alt="portfolio" class="img-fluid">
                                         <div class="pt-4 text-center">
                                             <a class="btn btn-dark" href="#" role="button">Voir le site</a>
                                             <a class="btn btn-dark" href="#" role="button">J'aime <i class="far fa-thumbs-up"></i></a>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
                                     </div>
                                 </div>
                             </div>
@@ -286,7 +288,7 @@
                         <!-- fin modal portfolio 2 -->
                     </div>
                     <div class="col-md-4 p-0 portfolio_img">
-                        <img src="img/portfolio_1.PNG" alt="portfolio_1" class="img-fluid">
+                        <img src="img/portfolio_1.jpg" alt="portfolio_1" class="img-fluid">
                         <div class="d-flex align-items-center justify-content-center img_zoom" data-toggle="modal" data-target="#modal_portfolio3">
                             <p>
                                 <i class="text-white fas fa-search-plus"></i>
@@ -295,7 +297,7 @@
                         </div>
                         <!-- debut modal portfolio 3  -->
                         <div class="modal fade" id="modal_portfolio3" tabindex="-1" role="dialog" aria-labelledby="modal_portfolio3_title" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                     <h5 class="modal-title" id="modal_portfolio3_title">Organic. Web</h5>
@@ -304,14 +306,14 @@
                                     </button>
                                     </div>
                                     <div class="modal-body">
-                                        <img src="img/portfolio_1.PNG" alt="portfolio" class="img-fluid">
+                                        <img src="img/portfolio_1.jpg" alt="portfolio" class="img-fluid">
                                         <div class="pt-4 text-center">
                                             <a class="btn btn-dark" href="#" role="button">Voir le site</a>
                                             <a class="btn btn-dark" href="#" role="button">J'aime <i class="far fa-thumbs-up"></i></a>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
                                     </div>
                                 </div>
                             </div>
@@ -321,7 +323,7 @@
                 </article>
                 <article class="row">
                     <div class="col-md-4 p-0 portfolio_img">
-                        <img src="img/portfolio_1.PNG" alt="portfolio_1" class="img-fluid">
+                        <img src="img/portfolio_1.jpg" alt="portfolio_1" class="img-fluid">
                         <div class="d-flex align-items-center justify-content-center img_zoom" data-toggle="modal" data-target="#modal_portfolio4">
                             <p>
                                 <i class="text-white fas fa-search-plus"></i>
@@ -330,7 +332,7 @@
                         </div>
                         <!-- debut modal portfolio 4  -->
                         <div class="modal fade" id="modal_portfolio4" tabindex="-1" role="dialog" aria-labelledby="modal_portfolio4_title" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                     <h5 class="modal-title" id="modal_portfolio4_title">Organic. Web</h5>
@@ -339,14 +341,14 @@
                                     </button>
                                     </div>
                                     <div class="modal-body">
-                                        <img src="img/portfolio_1.PNG" alt="portfolio" class="img-fluid">
+                                        <img src="img/portfolio_1.jpg" alt="portfolio" class="img-fluid">
                                         <div class="pt-4 text-center">
                                             <a class="btn btn-dark" href="#" role="button">Voir le site</a>
                                             <a class="btn btn-dark" href="#" role="button">J'aime <i class="far fa-thumbs-up"></i></a>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
                                     </div>
                                 </div>
                             </div>
@@ -354,7 +356,7 @@
                         <!-- fin modal portfolio 5 -->
                     </div>
                     <div class="col-md-4 p-0 portfolio_img">
-                        <img src="img/portfolio_1.PNG" alt="portfolio_1" class="img-fluid">
+                        <img src="img/portfolio_1.jpg" alt="portfolio_1" class="img-fluid">
                         <div class="d-flex align-items-center justify-content-center img_zoom" data-toggle="modal" data-target="#modal_portfolio5">
                             <p>
                                 <i class="text-white fas fa-search-plus"></i>
@@ -363,7 +365,7 @@
                         </div>
                         <!-- debut modal portfolio 5 -->
                         <div class="modal fade" id="modal_portfolio5" tabindex="-1" role="dialog" aria-labelledby="modal_portfolio5_title" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                     <h5 class="modal-title" id="modal_portfolio5_title">Organic. Web</h5>
@@ -379,7 +381,7 @@
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
                                     </div>
                                 </div>
                             </div>
@@ -387,7 +389,7 @@
                         <!-- fin modal portfolio 5 -->
                     </div>
                     <div class="col-md-4 p-0 portfolio_img">
-                        <img src="img/portfolio_1.PNG" alt="portfolio_1" class="img-fluid">
+                        <img src="img/portfolio_1.jpg" alt="portfolio_1" class="img-fluid">
                         <div class="d-flex align-items-center justify-content-center img_zoom" data-toggle="modal" data-target="#modal_portfolio6">
                             <p>
                                 <i class="text-white fas fa-search-plus"></i>
@@ -396,7 +398,7 @@
                         </div>
                         <!-- debut modal portfolio 6 -->
                         <div class="modal fade" id="modal_portfolio6" tabindex="-1" role="dialog" aria-labelledby="modal_portfolio6_title" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                     <h5 class="modal-title" id="modal_portfolio6_title">Organic. Web</h5>
@@ -412,12 +414,30 @@
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!-- fin modal portfolio 6 -->
+                    </div>
+                    <div class="collapse" id="portfolio_collapse">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-4 pr-0 pl-0">
+                                    <img src="img/portfolio_1.jpg" alt="collapse_portfolio" class="img-fluid">
+                                </div>
+                                <div class="col-md-4 pr-0 pl-0">
+                                    <img src="img/portfolio_1.jpg" alt="collapse_portfolio" class="img-fluid">
+                                </div>
+                                <div class="col-md-4 pl-0 pr-0">
+                                    <img src="img/portfolio_1.jpg" alt="collapse_portfolio" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container text-center position-relative">
+                        <button type="button" class="btn btn-primary mt-5 mb-5" data-toggle="collapse" data-target="#portfolio_collapse" aria-expanded="false" aria-controls="collapseExample" >Voir plus</button>
                     </div>
                 </article>
             </div>
