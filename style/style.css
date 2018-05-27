@@ -352,7 +352,7 @@ nav {
         height: 60%;
         width: 0%;
         border-top-color: transparent;
-        border-left-color: transparent;
+        border-right-color: transparent;
         border-bottom-color: #FFD600;
         border-left-color: #FFD600;
     }
@@ -360,7 +360,7 @@ nav {
         height: 60%;
         width: 100%;
         border-top-color: transparent;
-        border-left-color: transparent;
+        border-right-color: transparent;
         border-bottom-color:  #FFD600;
         border-left-color: #FFD600;
     }
@@ -426,3 +426,107 @@ nav {
 .contact_content p a {
     text-decoration: none !important;
 }
+/* fin contact */
+
+/* debut footer */
+#footer {
+    background: url(../img/header.jpg) fixed no-repeat;
+}
+.overlay_footer {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.overlay_footer .footer_content {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.icon_footer{
+    border: 2px solid #fff;
+    transition: 0.3s linear;
+}
+.icon_footer:hover{
+    border: 2px solid #FFD600;
+    transform: scale(1.2);
+    background-color: #FFD600;
+}
+.footer_title {
+    padding-top: 50px;
+}
+.footer_title h1::before {
+    content: '';
+    position: absolute;
+    border: 5px solid transparent;
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    top: 27px;
+    left: 0;
+}
+.footer_title h1:hover::before{
+    animation: border_7 0.8s forwards;
+}
+@keyframes border_7 {
+    0%{
+        height: 0%;
+        width: 0%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    50%{
+        height: 0%;
+        width: 100%;
+        border-top-color: #fff;
+        border-right-color: #fff;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    100%{
+        height: 100%;
+        width: 100%;
+        border-top-color: #fff;
+        border-right-color: #fff;
+        border-bottom-color:  transparent;
+        border-left-color: transparent;
+    }
+}
+.footer_title h1::after {
+    content: '';
+    position: absolute;
+    border: 5px solid transparent;
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    top: 27px;
+    left: 0;
+}
+.footer_title h1:hover::after{
+    animation: border_8 0.8s forwards;
+}
+@keyframes border_8 {
+    0%{
+        height: 0%;
+        width: 0%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    50%{
+        height: 100%;
+        width: 0%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: #fff;
+        border-left-color: #fff;
+    }
+    100%{
+        height: 100%;
+        width: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color:  #fff;
+        border-left-color: #fff;
+    }
+}
+/* fin footer */
