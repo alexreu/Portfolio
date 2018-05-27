@@ -23,6 +23,7 @@ body{
 
 /* debut loader */
 #loader {
+    visibility: hidden;
     position: fixed;
     height: 100vh;
     width: 100%;
