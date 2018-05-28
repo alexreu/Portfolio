@@ -6,11 +6,12 @@ $(document).ready(function(){
 
     
     $("#buttonCollapse").on('click',function(){
-        console.log('bla bla bla')
-        if($("#collapse_portfolio").hasClass("show")){
-        $("#buttonCollapse").html("Voir Plus");
+        if($("#buttonCollapse").hasClass("show")){
+            $("#buttonCollapse").removeClass("show");
+            $("#buttonCollapse").html("Voir Plus");
         }else{
-        $("#buttonCollapse").html("Voir Moins");
+            $("#buttonCollapse").addClass("show");
+            $("#buttonCollapse").html("Voir Moins");
         }
     }
 
