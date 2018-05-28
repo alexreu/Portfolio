@@ -5,10 +5,13 @@ $(document).ready(function(){
     }));
 
     
-    if($("#collapse_portfolio").is(".show")){
+    $("#buttonCollapse").on('click',function(){
+        console.log('bla bla bla')
+        if($("#collapse_portfolio").hasClass("show")){
+        $("#buttonCollapse").html("Voir Plus");
+        }else{
         $("#buttonCollapse").html("Voir Moins");
-    }else{
-        $("#buttonCollapse").html("Voir Plus xxxx");
+        }
     }
 
-});
+)});
