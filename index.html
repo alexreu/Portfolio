@@ -1,3 +1,9 @@
+<?php
+
+session_start();
+
+?>
+
 <!doctype html>
 <html lang="fr">
 
@@ -6,6 +12,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style/style.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 
@@ -15,7 +22,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
 </head>
-
 <body>
 
     <!-- debut loader -->
@@ -54,33 +60,33 @@
             </div>
         </div>
         <div class="container-fluid scroll_down_container d-flex align-items-center justify-content-center">
-            <a href="#about"><i class="fas fa-chevron-down fa-3x text-white"></i></a>
+            <a id="scrollDown"><i class="fas fa-chevron-down fa-3x text-white"></i></a>
         </div>
     </header>
     <!-- fin header -->
-    <main role="main">
+    <main role="main" data-spy="scroll" data-target="#navbarPc" data-offset="0">
         <!-- debut navbar pc -->
         <div class="container-fluid p-0 sticky-top navbar_pc d-none d-sm-none d-md-block d-lg-block d-xl-block">
             <nav class="navbar navbar-expand-md bg-light" id="navbarPc" role="navigation">
                 <div class="container">
-                    <a href="" class="navbar-brand brand">
+                    <a class="navbar-brand brand">
                         <img src="img/logo_1.png" alt="logo" width="70" height="50">
                     </a>
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a href="#header" class="nav-link font-weight-bold text-uppercase nav_link_color">Accueil</a>
+                            <a id="navHeader" class="nav-link font-weight-bold text-uppercase nav_link_color">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#about" class="nav-link font-weight-bold text-uppercase nav_link_color">A propos</a>
+                            <a id="navAbout" class="nav-link font-weight-bold text-uppercase nav_link_color">A propos</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#parcour" class="nav-link font-weight-bold text-uppercase nav_link_color">Parcours</a>
+                            <a id="navCourse" class="nav-link font-weight-bold text-uppercase nav_link_color">Parcours</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#portfolio" class="nav-link font-weight-bold text-uppercase nav_link_color">Portfolio</a>
+                            <a id="navPortfolio" class="nav-link font-weight-bold text-uppercase nav_link_color">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#contact" class="nav-link font-weight-bold text-uppercase nav_link_color">Contact</a>
+                            <a id="navContact" class="nav-link font-weight-bold text-uppercase nav_link_color">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -88,36 +94,45 @@
         </div>
         <!-- fin navbar-pc -->
     
-        <!-- menu mobile a faire -->
-        <div class="container-fluid d-block d-sm-block d-md-none d-lg-none d-xl none sticky-top p-0">
+        <!-- debut menu mobile -->
+        <div class="container-fluid d-block d-sm-block d-md-none d-lg-none d-xl none sticky-top p-0 navbar-mobile">
             <nav class="navbar navbar-expand-sm bg-light">
                 <div id='menuIcon' class="pb-3 pt-3" onclick="transformIconMenu()" data-toggle="collapse" data-target="#menu_mobile_collapse" aria-controls="menu_mobile_collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <div class="bar_1 mt-2 bg-yellow"></div>
                     <div class="bar_2 mt-2 bg-yellow"></div>
                     <div class="bar_3 mt-2 bg-yellow"></div>
                 </div>
+                <div class="mr-auto pt-2 pl-4">
+                    <h1>MENU</h1>
+                </div>
+                <!-- <a class="navbar-brand brand">
+                    <img src="img/logo_1.png" alt="logo" width="70" height="50">
+                </a> -->
                 <div class="collapse navbar-collapse" id="menu_mobile_collapse">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a href="#header" class="nav-link font-weight-bold text-uppercase nav_link_color">Accueil</a>
+                            <a id="navHeaderMobile" class="nav-link font-weight-bold text-uppercase nav_link_color">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#about" class="nav-link font-weight-bold text-uppercase nav_link_color">A propos</a>
+                            <a id="navAboutMobile" class="nav-link font-weight-bold text-uppercase nav_link_color">A propos</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#parcour" class="nav-link font-weight-bold text-uppercase nav_link_color">Parcours</a>
+                            <a id="navCoursetMobile" class="nav-link font-weight-bold text-uppercase nav_link_color">Parcours</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#contact" class="nav-link font-weight-bold text-uppercase nav_link_color">Contact</a>
+                            <a id="navPortfolioMobile" class="nav-link font-weight-bold text-uppercase nav_link_color">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="navContactMobile" class="nav-link font-weight-bold text-uppercase nav_link_color">Contact</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
-        <!-- menu mobile a faire -->
+        <!-- fin mobile a faire -->
     
         <!-- debut about -->
-        <section id="about" data-spy="scroll" data-target="#navbarPc" data-offset="0">
+        <section id="about">
             <div class="container">
                 <div class="col-md-4 offset-md-4 text-center">
                     <h1 class="text-uppercase yellow pb-4 pt-4 pl-2 pr-2 font-weight-bold about_title"><i class="fas fa-user"></i> à-propos</h1>
@@ -160,7 +175,7 @@
                                         <br>
                                         <span class="yellow"><\></span>
                                         <br>
-                                        notion jquery
+                                        jquery
                                     </p>  
                                 </div>
                                 <div class="col-12 col-md-6 text-center icon_about">
@@ -578,24 +593,52 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-5 offset-md-1">
-                        <form action="#" method="post">
+                        <?php if (array_key_exists('errors', $_SESSION)) : ?>
+                        <div class="col-md-12 pr-0 pl-0">
+                            <div class="alert alert-danger">
+                                <button type="button"class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <?= implode('<br>', $_SESSION['errors']); ?>
+                            </div>
+                        </div>
+                        <?php unset($_SESSION['errors']);
+                        endif; ?>
+                        <?php if (array_key_exists('success', $_SESSION)) : ?>
+                        <div class="col-md-12 pl-0 pr-0">
+                            <div class="alert alert-success">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                Votre mail à bien était envoyer
+                            </div>
+                        </div>
+                        <?php unset($_SESSION['success']);
+                        endif;?>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-5 offset-md-1">
+                        <form action="app/mail.php" method="post" id="contactForm">
                             <div class="form-group">
                                 <label for="name" class="yellow">Nom Prénom</label>
-                                <input onfocusout="check('name')" class="form-control" type="text" name="name" id="name" placeholder="Nom et Prénom*" required>
+                                <input class="form-control" type="text" name="name" id="name" placeholder="Nom et Prénom*" required>
                             </div>
                             <div class="form-group">
                                 <label for="mail" class="yellow">Adresse Mail</label>
-                                <input onfocusout="check('mail')" class="form-control" type="email" name="mail" id="mail" placeholder="Votre Mail*" required>
+                                <input class="form-control" type="email" name="mail" id="mail" placeholder="Votre Mail*" required>
                             </div>
                             <div class="form-group">
                                 <label for="subject" class="yellow">Sujet</label>
-                                <input onfocusout="check('subject')" type="text" name="subject" id="subject" class="form-control" placeholder="Votre Sujet*" required>
+                                <input type="text" name="subject" id="subject" class="form-control" placeholder="Votre Sujet*" required>
                             </div>
                             <div class="form-group">
                                 <label for="message" class="yellow">Message*</label>
-                                <textarea onfocusout="check('message')" class="form-control" name="message" id="message" cols="30" rows="10" placeholder="Votre message" required></textarea>
+                                <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="Votre message" required></textarea>
                             </div>
-                            <button type="submit" class="btn btn-lg btn-block bg-yellow text-white">Envoyer</button>
+                            <button type="submit" class="btn btn-lg btn-block bg-yellow text-white" id="submitForm">Envoyer</button>
                         </form>
                     </div>
                     <div class="col-md-6 d-flex align-items-center text-center contact_content ">

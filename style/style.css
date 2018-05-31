@@ -91,6 +91,9 @@ header {
     10%  { transform: translateY(0); opacity: 1;}
     100%  { transform: translateY(35px); opacity: 0;}
 }
+#scrollDown {
+    cursor: pointer;
+}
 /* fin header */
 
 /* debut navbar pc */
@@ -125,6 +128,12 @@ nav {
 }
 .change .bar_3 {
     transform: rotate(45deg) translate(-9px, -9px)
+}
+.nav-item a {
+    cursor: pointer !important;
+}
+.navbar-mobile {
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
 }
 /* fin navbar mobile */
 
