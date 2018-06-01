@@ -30,11 +30,11 @@ $(document).ready(function(){
     $("#navAbout").click(function(){
         fluidScroll($('#about'));
     });
-    $("#navCourse").click(function(){
-        fluidScroll($('#parcour'));
-    });
     $("#navPortfolio").click(function(){
         fluidScroll($('#portfolio'));
+    });
+    $("#navCourse").click(function(){
+        fluidScroll($('#parcour'));
     });
     $("#navContact").click(function(){
         fluidScroll($('#contact'));
@@ -79,25 +79,16 @@ function transformIconMenu (){
  * fonction de check si les champs du formulaire sont remplis
  */
 var inputForm = document.querySelectorAll('input, textarea');
-
-var nameUser = document.querySelector('#name');
-var mailUser = document.querySelector('#mail');
-var subjectUser = document.querySelector('#subject');
-var messageUser = document.querySelector('#message');
-
-function check (){
-
-    for (let i = 0, f=inputForm.length; i < f ; i++) {
+for (let i = 0, f=inputForm.length; i < f ; i++) {
+    inputForm[i].addEventListener('blur', function(){
         if (inputForm[i].value ==  '') {
             inputForm[i].classList.add('is-invalid');
         }else{
             inputForm[i].classList.remove('is-invalid')
             inputForm[i].classList.add('is-valid');
         }
-    }
+    })
 }
-nameUser.addEventListener('blur', check);
-mailUser.addEventListener('blur', check);
-subjectUser.addEventListener('blur', check);
-messageUser.addEventListener('blur', check);
+
+
 

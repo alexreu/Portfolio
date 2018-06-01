@@ -13,16 +13,15 @@ session_start();
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="style/style.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-
     <!-- Font awesomme css -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
 </head>
-<body>
+<body role="main" data-spy="scroll" data-target="#navbarPc" data-offset="100">
 
     <!-- debut loader -->
     <div id="loader">
@@ -64,7 +63,7 @@ session_start();
         </div>
     </header>
     <!-- fin header -->
-    <main role="main" data-spy="scroll" data-target="#navbarPc" data-offset="0">
+    <main >
         <!-- debut navbar pc -->
         <div class="container-fluid p-0 sticky-top navbar_pc d-none d-sm-none d-md-block d-lg-block d-xl-block">
             <nav class="navbar navbar-expand-md bg-light" id="navbarPc" role="navigation">
@@ -77,16 +76,22 @@ session_start();
                             <a id="navHeader" class="nav-link font-weight-bold text-uppercase nav_link_color">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a id="navAbout" class="nav-link font-weight-bold text-uppercase nav_link_color">A propos</a>
+                            <a id="navAbout" href="#about" class="nav-link font-weight-bold text-uppercase nav_link_color">A propos</a>
                         </li>
                         <li class="nav-item">
-                            <a id="navCourse" class="nav-link font-weight-bold text-uppercase nav_link_color">Parcours</a>
+                            <a id="navPortfolio" href="#portfolio" class="nav-link font-weight-bold text-uppercase nav_link_color">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a id="navPortfolio" class="nav-link font-weight-bold text-uppercase nav_link_color">Portfolio</a>
+                            <a id="navCourse" href="#parcour" class="nav-link font-weight-bold text-uppercase nav_link_color">Parcours</a>
                         </li>
                         <li class="nav-item">
-                            <a id="navContact" class="nav-link font-weight-bold text-uppercase nav_link_color">Contact</a>
+                            <a id="navContact" href="#contact" class="nav-link font-weight-bold text-uppercase nav_link_color">Contact</a>
+                        </li>
+                        <li class="nav-item pl-2 pt-1">
+                           <a href="http://" data-toggle="tooltip" data-placement="bottom" title="French version / Version Française"><img src="img/fr-flag.png" alt="drapeau français" class="img-fluid" width="30" height="30">  </a>          
+                        </li>
+                        <li class="nav-item pl-2 pt-1">
+                            <a href="" data-toggle="tooltip" data-placement="bottom" title="English version / Version Anglaise"><img src="img/us-flag.png" alt="drapeau américain" class="img-fluid" width="30" height="30"></a>        
                         </li>
                     </ul>
                 </div>
@@ -125,6 +130,12 @@ session_start();
                         <li class="nav-item">
                             <a id="navContactMobile" class="nav-link font-weight-bold text-uppercase nav_link_color">Contact</a>
                         </li>
+                        <li class="nav-item pl-2 pt-1">
+                            <a href=""><img src="img/fr-flag.png" alt="drapeau français" class="img-fluid" width="30" height="30"><span class="nav_link_color pl-2 font-weight-bold ">FR</span></a>          
+                        </li>
+                        <li class="nav-item pl-2 pt-1">
+                            <a href=""><img src="img/us-flag.png" alt="drapeau américain" class="img-fluid" width="30" height="30"><span class="nav_link_color pl-2 font-weight-bold">US</span></a>        
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -135,7 +146,7 @@ session_start();
         <section id="about">
             <div class="container">
                 <div class="col-md-4 offset-md-4 text-center">
-                    <h1 class="text-uppercase yellow pb-4 pt-4 pl-2 pr-2 font-weight-bold about_title"><i class="fas fa-user"></i> à-propos</h1>
+                    <h1 id="titleAbout" class="text-uppercase yellow pb-4 pt-4 pl-2 pr-2 font-weight-bold about_title"><i class="fas fa-user"></i> à-propos</h1>
                 </div>
                 <div class="col-md-6 text-center mx-auto pt-2">
                     <p class="text-muted">
@@ -146,17 +157,17 @@ session_start();
             <div class="container">
                 <div class="row pt-5">
                     <article class="col-md-6">
-                        <div class="text-center">
+                        <div class="text-center pb-4">
                             <h2 class="text-uppercase yellow font-weight-bold"><i class="fas fa-sync fa-spin mr-2"></i> compétences</h2>
                         </div>
                         <div class="row justify-content-around pt-5">
-                            <div class="col-12 col-md-6 text-center icon_about">
+                            <div class="col-12 col-md-3 text-center icon_about">
                                 <i class="fab fa-html5 fa-5x yellow"></i>
                                 <p class="text-muted pt-3 text-uppercase">
                                     html5
                                 </p>  
                             </div>
-                            <div class="col-12 col-md-6 text-center icon_about">
+                            <div class="col-12 col-md-3 text-center icon_about">
                                 <i class="fab fa-css3-alt fa-5x yellow"></i>
                                 <p class="text-muted pt-3 text-uppercase">
                                     css3
@@ -166,9 +177,7 @@ session_start();
                                     bootstrap 4
                                 </p>
                             </div>
-                        </div>
-                        <div class="row justify-content-around pt-5">
-                            <div class="col-12 col-md-6 text-center icon_about">
+                            <div class="col-12 col-md-3 text-center icon_about">
                                     <i class="fab fa-js yellow fa-5x"></i>
                                     <p class="text-muted pt-3 text-uppercase">
                                         JavaScript
@@ -178,13 +187,12 @@ session_start();
                                         jquery
                                     </p>  
                                 </div>
-                                <div class="col-12 col-md-6 text-center icon_about">
+                                <div class="col-12 col-md-3 text-center icon_about">
                                     <i class="fas fa-database yellow fa-5x"></i>
                                     <p class="text-muted pt-3 text-uppercase">
                                         notion mysql
                                     </p>
                             </div>
-
                         </div>
                         <div class="row justify-content-center pt-5 pb-5">
                             <a href="#" class="w-100 text-center">
@@ -215,69 +223,20 @@ session_start();
             </div>
         </section>
         <!-- fin about -->
-    
-        <!-- debut parcours -->
-        <section id="parcour">
-            <div class="overlay_parcour">
-                <div class="container-fluid pt-5 pb-5">
-                    <div class="col-md-2 offset-md-5 text-center pb-5 pt-3 parcour_title">
-                        <h1 class="text-white text-uppercase font-weight-bold pt-3 pb-3"><i class="fas fa-graduation-cap"></i> Parcours</h1>
-                    </div>
-                    <article class="row text-center p-0">
-                        <div class="img_formation col-sm-2 offset-sm-1  col-md-2 offset-md-1">
-                            <a href="https://simplonreunion.co/" target="_blank"><img src="img/simplon.png" alt="simplon" class="img-fluid"></a>
-                            <p class="text-white">
-                                <span class="text-uppercase">simplon reunion</span> <br> 2018 / <span class="yellow">POEC</span> Developpeur Web
-                            </p>
-                        </div>
-                        <div class="img_formation col-sm-2 col-md-2">
-                            <a href="https://www.reunion.cci.fr/" target="_blank"><img src="img/cci.png" alt="simplon" class="img-fluid"></a>
-                            <p class="text-white">
-                                <span class="text-uppercase">CCI - Reunion</span> <br>
-                                2015 - 2017 / <span class="yellow">CERT</span> - Chargé d'Exploitation en Reseaux et Telecoms 
-                            </p>
-                        </div>
-                        <div class="img_formation col-sm-2 col-md-2">
-                            <a href="http://www.univ-reunion.fr/" target="_blank"><img src="img/fac.png" alt="simplon" class="img-fluid"></a>
-                            <p class="text-white">
-                                <span class="text-uppercase">université de la reunion</span> <br>
-                                2014 - 2015 / <span class="yellow">L1 MIP</span> Mathématiques Informatique et Physique
-                            </p>
-                        </div>
-                        <div class="img_formation col-sm-2 col-md-2">
-                            <a href="http://lycee-belair.ac-reunion.fr/" target="_blank"><img src="img/lyc.png" alt="simplon" class="img-fluid"></a>
-                            <p class="text-white">
-                                <span class="text-uppercase">Lycée Bel Air - St Suzanne</span> <br>
-                                2013 - 2014 / <span class="yellow">BAC STI2D - ITEC</span> Innovation Technologique & Eco-Conception
-                            </p>
-                        </div>
-                        <div class="img_formation col-sm-2 col-md-2 text-center">
-                            <a href="http://college-quartierfrancais.ac-reunion.fr/" target="_blank"><img src="img/clg.png" alt="simplon" class="img-fluid"></a>
-                            <p class="text-white">
-                                <span class="text-uppercase">College Lucet Langenier - St Suzanne</span> <br>
-                                2019 - 2010 / <span class="yellow">Brevet des collèges</span>
-                            </p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-        <!-- fin parcours -->
-
         <!-- debut portfolio -->
         <section id="portfolio">
-            <div class="container-fluid pt-5 pl-0 pr-0">
-                <div class="col-md-2 offset-md-5 text-center pt-5 pb-5 portfolio_title">
+            <div class="container-fluid pt-3 pl-0 pr-0">
+                <div class="col-md-4 offset-md-4 text-center pt-5 pb-5 portfolio_title">
                     <h1 class="yellow text-uppercase"><i class="fas fa-clipboard-check"></i> portfolio</h1>
                 </div>
                 <article class="row pt-4 m-0">
                     <div class="col-md-4 p-0 portfolio_img">
-                        <img src="img/portfolio_1.jpg" alt="portfolio_1" class="img-fluid">
+                        <img src="img/portfolio_1.png" alt="organic web" class="img-fluid">
                         <div class="d-flex align-items-center justify-content-center img_zoom"data-toggle="modal" data-target="#modal_portfolio1">
                             <p>
                                 <i class="text-white fas fa-search-plus"></i>
                             </p>
-                            <h3 class="text-white yellow">Voir plus</h3>
+                            <h3 class="text-white">Voir plus</h3>
                         </div>
                     </div>
                     <!-- debut modal portfolio 1  -->
@@ -291,10 +250,10 @@ session_start();
                                   </button>
                                 </div>
                                 <div class="modal-body">
-                                    <img src="img/portfolio_1.jpg" alt="portfolio" class="img-fluid">
+                                    <img src="img/portfolio_1.png" alt=" organic web" class="img-fluid">
                                     <div class="pt-4 text-center">
-                                        <a class="btn btn-dark" href="#" role="button">Voir le site</a>
-                                        <a class="btn btn-dark" href="#" role="button">J'aime <i class="far fa-thumbs-up"></i></a>
+                                        <a class="btn btn-light btn-lg" href="#" role="button">Voir le site</a>
+                                        <!-- <a class="btn btn-dark" href="#" role="button">J'aime <i class="far fa-thumbs-up"></i></a> -->
                                     </div>
                                 </div>
                                 <div class="modal-footer">
@@ -305,31 +264,31 @@ session_start();
                     </div>
                     <!-- fin modal portfolio 1 -->
                     <div class="col-md-4 p-0 portfolio_img">
-                        <img src="img/portfolio_1.jpg" alt="portfolio_1" class="img-fluid">
+                        <img src="img/portfolio_2.png" alt="anne-esthetik.com" class="img-fluid">
                         <div class="d-flex align-items-center justify-content-center img_zoom"data-toggle="modal" data-target="#modal_portfolio2">
                             <p>
                                 <i class="text-white fas fa-search-plus"></i>
                             </p>
-                            <h3 class="text-white yellow">Voir plus</h3>
+                            <h3 class="text-white">Voir plus</h3>
                         </div>
                         <!-- debut modal portfolio 2  -->
                         <div class="modal fade" id="modal_portfolio2" tabindex="-1" role="dialog" aria-labelledby="modal_portfolio2_title" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                    <h5 class="modal-title" id="modal_portfolio2_title">Organic. Web</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <div class="modal-content myModal-content">
+                                    <div class="modal-header myModal-header">
+                                    <h5 class="text-secondary" id="modal_portfolio2_title">Anne-esthetik.com</h5>
+                                    <button type="button" class="close yellow" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                     </div>
                                     <div class="modal-body">
-                                        <img src="img/portfolio_1.jpg" alt="portfolio" class="img-fluid">
+                                        <img src="img/portfolio_2.png" alt="anne-esthetik.com" class="img-fluid">
                                         <div class="pt-4 text-center">
-                                            <a class="btn btn-dark" href="#" role="button">Voir le site</a>
-                                            <a class="btn btn-dark" href="#" role="button">J'aime <i class="far fa-thumbs-up"></i></a>
+                                            <a class="btn btn-light btn-lg" href="#" role="button">Voir le site</a>
+                                            <!-- <a class="btn btn-dark" href="#" role="button">J'aime <i class="far fa-thumbs-up"></i></a> -->
                                         </div>
                                     </div>
-                                    <div class="modal-footer">
+                                    <div class="modal-footer myModal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
                                     </div>
                                 </div>
@@ -338,12 +297,12 @@ session_start();
                         <!-- fin modal portfolio 2 -->
                     </div>
                     <div class="col-md-4 p-0 portfolio_img">
-                        <img src="img/portfolio_1.jpg" alt="portfolio_1" class="img-fluid">
+                        <img src="img/portfolio_1.png" alt="portfolio_1" class="img-fluid">
                         <div class="d-flex align-items-center justify-content-center img_zoom" data-toggle="modal" data-target="#modal_portfolio3">
                             <p>
                                 <i class="text-white fas fa-search-plus"></i>
                             </p>
-                            <h3 class="text-white yellow">Voir plus</h3>
+                            <h3 class="text-white">Voir plus</h3>
                         </div>
                         <!-- debut modal portfolio 3  -->
                         <div class="modal fade" id="modal_portfolio3" tabindex="-1" role="dialog" aria-labelledby="modal_portfolio3_title" aria-hidden="true">
@@ -356,10 +315,10 @@ session_start();
                                     </button>
                                     </div>
                                     <div class="modal-body">
-                                        <img src="img/portfolio_1.jpg" alt="portfolio" class="img-fluid">
+                                        <img src="img/portfolio_1.png" alt="portfolio" class="img-fluid">
                                         <div class="pt-4 text-center">
-                                            <a class="btn btn-dark" href="#" role="button">Voir le site</a>
-                                            <a class="btn btn-dark" href="#" role="button">J'aime <i class="far fa-thumbs-up"></i></a>
+                                            <a class="btn btn-light btn-lg" href="#" role="button">Voir le site</a>
+                                            <!-- <a class="btn btn-dark" href="#" role="button">J'aime <i class="far fa-thumbs-up"></i></a> -->
                                         </div>
                                     </div>
                                     <div class="modal-footer">
@@ -373,12 +332,12 @@ session_start();
                 </article>
                 <article class="row m-0">
                     <div class="col-md-4 p-0 portfolio_img">
-                        <img src="img/portfolio_1.jpg" alt="portfolio_1" class="img-fluid">
+                        <img src="img/portfolio_1.png" alt="portfolio_1" class="img-fluid">
                         <div class="d-flex align-items-center justify-content-center img_zoom" data-toggle="modal" data-target="#modal_portfolio4">
                             <p>
                                 <i class="text-white fas fa-search-plus"></i>
                              </p>
-                            <h3 class="text-white yellow">Voir plus</h3>
+                            <h3 class="text-white">Voir plus</h3>
                         </div>
                         <!-- debut modal portfolio 4  -->
                         <div class="modal fade" id="modal_portfolio4" tabindex="-1" role="dialog" aria-labelledby="modal_portfolio4_title" aria-hidden="true">
@@ -391,10 +350,10 @@ session_start();
                                     </button>
                                     </div>
                                     <div class="modal-body">
-                                        <img src="img/portfolio_1.jpg" alt="portfolio" class="img-fluid">
+                                        <img src="img/portfolio_1.png" alt="portfolio" class="img-fluid">
                                         <div class="pt-4 text-center">
-                                            <a class="btn btn-dark" href="#" role="button">Voir le site</a>
-                                            <a class="btn btn-dark" href="#" role="button">J'aime <i class="far fa-thumbs-up"></i></a>
+                                            <a class="btn btn-light btn-lg" href="#" role="button">Voir le site</a>
+                                            <!-- <a class="btn btn-dark" href="#" role="button">J'aime <i class="far fa-thumbs-up"></i></a> -->
                                         </div>
                                     </div>
                                     <div class="modal-footer">
@@ -406,12 +365,12 @@ session_start();
                         <!-- fin modal portfolio 5 -->
                     </div>
                     <div class="col-md-4 p-0 portfolio_img">
-                        <img src="img/portfolio_1.jpg" alt="portfolio_1" class="img-fluid">
+                        <img src="img/portfolio_1.png" alt="portfolio_1" class="img-fluid">
                         <div class="d-flex align-items-center justify-content-center img_zoom" data-toggle="modal" data-target="#modal_portfolio5">
                             <p>
                                 <i class="text-white fas fa-search-plus"></i>
                             </p>
-                            <h3 class="text-white yellow">Voir plus</h3>
+                            <h3 class="text-white">Voir plus</h3>
                         </div>
                         <!-- debut modal portfolio 5 -->
                         <div class="modal fade" id="modal_portfolio5" tabindex="-1" role="dialog" aria-labelledby="modal_portfolio5_title" aria-hidden="true">
@@ -426,8 +385,8 @@ session_start();
                                     <div class="modal-body">
                                         <img src="img/portfolio_1.PNG" alt="portfolio" class="img-fluid">
                                         <div class="pt-4 text-center">
-                                            <a class="btn btn-dark" href="#" role="button">Voir le site</a>
-                                            <a class="btn btn-dark" href="#" role="button">J'aime <i class="far fa-thumbs-up"></i></a>
+                                            <a class="btn btn-light btn-lg" href="#" role="button">Voir le site</a>
+                                            <!-- <a class="btn btn-dark" href="#" role="button">J'aime <i class="far fa-thumbs-up"></i></a> -->
                                         </div>
                                     </div>
                                     <div class="modal-footer">
@@ -439,12 +398,12 @@ session_start();
                         <!-- fin modal portfolio 5 -->
                     </div>
                     <div class="col-md-4 p-0 portfolio_img">
-                        <img src="img/portfolio_1.jpg" alt="portfolio_1" class="img-fluid">
+                        <img src="img/portfolio_1.png" alt="portfolio_1" class="img-fluid">
                         <div class="d-flex align-items-center justify-content-center img_zoom" data-toggle="modal" data-target="#modal_portfolio6">
                             <p>
                                 <i class="text-white fas fa-search-plus"></i>
                             </p>
-                            <h3 class="text-white yellow">Voir plus</h3>
+                            <h3 class="text-white">Voir plus</h3>
                         </div>
                         <!-- debut modal portfolio 6 -->
                         <div class="modal fade" id="modal_portfolio6" tabindex="-1" role="dialog" aria-labelledby="modal_portfolio6_title" aria-hidden="true">
@@ -459,8 +418,8 @@ session_start();
                                     <div class="modal-body">
                                         <img src="img/portfolio_1.PNG" alt="portfolio" class="img-fluid">
                                         <div class="pt-4 text-center">
-                                            <a class="btn btn-dark" href="#" role="button">Voir le site</a>
-                                            <a class="btn btn-dark" href="#" role="button">J'aime <i class="far fa-thumbs-up"></i></a>
+                                            <a class="btn btn-light btn-lg" href="#" role="button">Voir le site</a>
+                                            <!-- <a class="btn btn-dark" href="#" role="button">J'aime <i class="far fa-thumbs-up"></i></a> -->
                                         </div>
                                     </div>
                                     <div class="modal-footer">
@@ -481,7 +440,7 @@ session_start();
                                 <p>
                                     <i class="text-white fas fa-search-plus"></i>
                                 </p>
-                                <h3 class="text-white yellow">Voir plus</h3>
+                                <h3 class="text-white">Voir plus</h3>
                             </div>
                             <!-- debut modal portfolio 7 -->
                             <div class="modal fade" id="modal_portfolio7" tabindex="-1" role="dialog" aria-labelledby="modal_portfolio7_title" aria-hidden="true">
@@ -496,8 +455,8 @@ session_start();
                                         <div class="modal-body">
                                             <img src="img/portfolio_1.PNG" alt="portfolio" class="img-fluid">
                                             <div class="pt-4 text-center">
-                                                <a class="btn btn-dark" href="#" role="button">Voir le site</a>
-                                                <a class="btn btn-dark" href="#" role="button">J'aime <i class="far fa-thumbs-up"></i></a>
+                                                <a class="btn btn-light btn-lg" href="#" role="button">Voir le site</a>
+                                                <!-- <a class="btn btn-dark" href="#" role="button">J'aime <i class="far fa-thumbs-up"></i></a> -->
                                             </div>
                                         </div>
                                         <div class="modal-footer">
@@ -513,7 +472,7 @@ session_start();
                                 <p>
                                     <i class="text-white fas fa-search-plus"></i>
                                 </p>
-                                <h3 class="text-white yellow">Voir plus</h3>
+                                <h3 class="text-white">Voir plus</h3>
                             </div>
                             <!-- debut modal portfolio 8 -->
                             <div class="modal fade" id="modal_portfolio8" tabindex="-1" role="dialog" aria-labelledby="modal_portfolio8_title" aria-hidden="true">
@@ -528,8 +487,8 @@ session_start();
                                         <div class="modal-body">
                                             <img src="img/portfolio_1.PNG" alt="portfolio" class="img-fluid">
                                             <div class="pt-4 text-center">
-                                                <a class="btn btn-dark" href="#" role="button">Voir le site</a>
-                                                <a class="btn btn-dark" href="#" role="button">J'aime <i class="far fa-thumbs-up"></i></a>
+                                                <a class="btn btn-light btn-lg" href="#" role="button">Voir le site</a>
+                                                <!-- <a class="btn btn-dark" href="#" role="button">J'aime <i class="far fa-thumbs-up"></i></a> -->
                                             </div>
                                         </div>
                                         <div class="modal-footer">
@@ -560,8 +519,8 @@ session_start();
                                         <div class="modal-body">
                                             <img src="img/portfolio_1.PNG" alt="portfolio" class="img-fluid">
                                             <div class="pt-4 text-center">
-                                                <a class="btn btn-dark" href="#" role="button">Voir le site</a>
-                                                <a class="btn btn-dark" href="#" role="button">J'aime <i class="far fa-thumbs-up"></i></a>
+                                                <a class="btn btn-light btn-lg" href="#" role="button">Voir le site</a>
+                                                <!-- <a class="btn btn-dark" href="#" role="button">J'aime <i class="far fa-thumbs-up"></i></a> -->
                                             </div>
                                         </div>
                                         <div class="modal-footer">
@@ -582,11 +541,57 @@ session_start();
             </div>
         </section>
         <!-- fin portfolio -->
-
+        <!-- debut parcours -->
+        <section id="parcour">
+            <div class="overlay_parcour">
+                <div class="container-fluid pt-5 pb-5">
+                    <div class="col-md-6 offset-md-3 text-center pb-5 pt-3 parcour_title">
+                        <h1 class="text-white text-uppercase font-weight-bold pt-3 pb-3"><i class="fas fa-graduation-cap"></i> Parcours</h1>
+                    </div>
+                    <article class="row text-center p-0">
+                        <div id="test" class="img_formation col-sm-2 offset-sm-1  col-md-2 offset-md-1">
+                            <a href="https://simplonreunion.co/" target="_blank"><img src="img/simplon.png" alt="simplon" class="img-fluid myImg-fluid"></a>
+                            <p class="text-white">
+                                <span class="text-uppercase">simplon reunion</span> <br> 2018 / <span class="yellow">POEC</span> Developpeur Web
+                            </p>
+                        </div>
+                        <div class="img_formation col-sm-2 col-md-2">
+                            <a href="https://www.reunion.cci.fr/" target="_blank"><img src="img/cci.png" alt="simplon" class="img-fluid myImg-fluid"></a>
+                            <p class="text-white">
+                                <span class="text-uppercase">CCI - Reunion</span> <br>
+                                2015 - 2017 / <span class="yellow">CERT</span> - Chargé d'Exploitation en Reseaux et Telecoms 
+                            </p>
+                        </div>
+                        <div class="img_formation col-sm-2 col-md-2">
+                            <a href="http://www.univ-reunion.fr/" target="_blank"><img src="img/fac.png" alt="simplon" class="img-fluid myImg-fluid"></a>
+                            <p class="text-white">
+                                <span class="text-uppercase">université de la reunion</span> <br>
+                                2014 - 2015 / <span class="yellow">L1 MIP</span> Mathématiques Informatique et Physique
+                            </p>
+                        </div>
+                        <div class="img_formation col-sm-2 col-md-2">
+                            <a href="http://lycee-belair.ac-reunion.fr/" target="_blank"><img src="img/lyc.png" alt="simplon" class="img-fluid myImg-fluid"></a>
+                            <p class="text-white">
+                                <span class="text-uppercase">Lycée Bel Air - St Suzanne</span> <br>
+                                2013 - 2014 / <span class="yellow">BAC STI2D - ITEC</span> Innovation Technologique & Eco-Conception
+                            </p>
+                        </div>
+                        <div class="img_formation col-sm-2 col-md-2 text-center">
+                            <a href="http://college-quartierfrancais.ac-reunion.fr/" target="_blank"><img src="img/clg.png" alt="simplon" class="img-fluid myImg-fluid"></a>
+                            <p class="text-white">
+                                <span class="text-uppercase">College Lucet Langenier - St Suzanne</span> <br>
+                                2019 - 2010 / <span class="yellow">Brevet des collèges</span>
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- fin parcours -->
         <!-- debut contact -->
         <section id="contact" class="pb-5">
             <div class="container-fluid pt-5">
-                <div class="col-md-2 offset-md-5 text-center contact_title pt-5 pb-5">
+                <div class="col-md-4 offset-md-4 text-center contact_title pt-5 pb-5">
                     <h1 class="yellow text-uppercase"><i class="fas fa-paper-plane"></i> Contact</h1>
                 </div>
             </div>
@@ -656,20 +661,20 @@ session_start();
     <!-- debut footer -->
     <section id="footer">
         <div class="container-fluid overlay_footer">
-            <div class="col-md-4 offset-md-4 text-center footer_title">
+            <div class="col-md-6 offset-md-3 text-center footer_title">
                 <h1 class="text-white text-uppercase"><i class="fab fa-connectdevelop"></i> Réseaux Sociaux</h1>
             </div>
             <div class="row footer_content">
                 <div class="col-md-6 offset-md-3 text-center">
                     <div class="row  justify-content-center align-items-center">
-                        <div class="col-md-2 pb-3">
+                        <div class="col-4 col-md-3 col-lg-2 pb-3">
                             <a href="https://github.com/alexreu" target="_blank">
                                 <div class="icon_footer py-2">
                                     <i class="fab fa-github text-white fa-2x"></i>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-md-2 pb-3">
+                        <div class="col-4 col-md-3 col-lg-2 pb-3">
                             <a href="https://www.linkedin.com/in/alexandre-adolphe-817059146/" target="_blank">
                                 <div class="icon_footer py-2">
                                     <i class="fab fa-linkedin-in text-white fa-2x"></i>
