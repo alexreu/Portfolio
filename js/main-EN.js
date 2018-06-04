@@ -29,47 +29,46 @@ $(document).ready(function(){
         }
     })
 
-    $("#go-top").click(function(){
+    $("#go-top").on('click', function(){
         fluidScroll($("#header"));
     })
 
     // menu pc
-    $("#scrollDown").click(function(){
+    $("#scrollDown").on('click', function(){
         fluidScroll($('#about'));
     });
-    $("#navHeader").click(function(){
+    $("#navHeader").on('click',  function(){
         fluidScroll($('#header'));
     });
-    $("#navAbout").click(function(){
+    $("#navAbout").on('click', function(){
         fluidScroll($('#about'));
     });
-    $("#navPortfolio").click(function(){
+    $("#navPortfolio").on('click', function(){
         fluidScroll($('#portfolio'));
     });
-    $("#navCourse").click(function(){
+    $("#navCourse").on('click', function(){
         fluidScroll($('#parcour'));
     });
-    $("#navContact").click(function(){
+    $("#navContact").on('click', function(){
         fluidScroll($('#contact'));
     });
 
     // menu mobile
-    $("#navHeaderMobile").click(function(){
+    $("#navHeaderMobile").on('click', function(){
         fluidScroll($('#header'));
     });
-    $("#navAboutMobile").click(function(){
+    $("#navAboutMobile").on('click', function(){
         fluidScroll($('#about'));
     });
-    $("#navCoursetMobile").click(function(){
+    $("#navCoursetMobile").on('click', function(){
         fluidScroll($('#parcour'));
     });
-    $("#navPortfolioMobile").click(function(){
+    $("#navPortfolioMobile").on('click', function(){
         fluidScroll($('#portfolio'));
     });
-    $("#navContactMobile").click(function(){
+    $("#navContactMobile").on('click', function(){
         fluidScroll($('#contact'));
     });
-
     /**
      * fonction scroll fluid au clique d'un lien
      * @param {string} target 

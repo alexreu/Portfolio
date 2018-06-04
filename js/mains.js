@@ -4,9 +4,9 @@ $(document).ready(function(){
     /**
      * fonction permettant d'avoir une page load le temps que le site ce charge avant d'afficher
      */
-    $(window).on('load',(function(){
+    $(window).on('load',function(){
         $('#loader').fadeOut(500);
-    }));
+    });
 
     /**
      * fonction permettant de changer le contenu du bouton voir plus du portfolio
@@ -21,51 +21,52 @@ $(document).ready(function(){
         }
     });
 
-    $(window).scroll(function(){
+    $(window).on('scroll',function(){
         if($(this).scrollTop() > 50){
             $("#go-top").fadeIn(500).addClass("visible")
         }else{
             $("#go-top").fadeOut(500).removeClass("visible")
         }
     })
-    $("#go-top").click(function(){
+
+    $("#go-top").on('click', function(){
         fluidScroll($("#header"));
     })
 
     // menu pc
-    $("#scrollDown").click(function(){
+    $("#scrollDown").on('click', function(){
         fluidScroll($('#about'));
     });
-    $("#navHeader").click(function(){
+    $("#navHeader").on('click',  function(){
         fluidScroll($('#header'));
     });
-    $("#navAbout").click(function(){
+    $("#navAbout").on('click', function(){
         fluidScroll($('#about'));
     });
-    $("#navPortfolio").click(function(){
+    $("#navPortfolio").on('click', function(){
         fluidScroll($('#portfolio'));
     });
-    $("#navCourse").click(function(){
+    $("#navCourse").on('click', function(){
         fluidScroll($('#parcour'));
     });
-    $("#navContact").click(function(){
+    $("#navContact").on('click', function(){
         fluidScroll($('#contact'));
     });
 
     // menu mobile
-    $("#navHeaderMobile").click(function(){
+    $("#navHeaderMobile").on('click', function(){
         fluidScroll($('#header'));
     });
-    $("#navAboutMobile").click(function(){
+    $("#navAboutMobile").on('click', function(){
         fluidScroll($('#about'));
     });
-    $("#navCoursetMobile").click(function(){
+    $("#navCoursetMobile").on('click', function(){
         fluidScroll($('#parcour'));
     });
-    $("#navPortfolioMobile").click(function(){
+    $("#navPortfolioMobile").on('click', function(){
         fluidScroll($('#portfolio'));
     });
-    $("#navContactMobile").click(function(){
+    $("#navContactMobile").on('click', function(){
         fluidScroll($('#contact'));
     });
 
