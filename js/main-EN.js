@@ -20,6 +20,19 @@ $(document).ready(function(){
             $("#buttonCollapse").html("See Less");
         }
     });
+
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 50){
+            $("#go-top").fadeIn(500).addClass("visible")
+        }else{
+            $("#go-top").fadeOut(500).removeClass("visible")
+        }
+    })
+
+    $("#go-top").click(function(){
+        fluidScroll($("#header"));
+    })
+
     // menu pc
     $("#scrollDown").click(function(){
         fluidScroll($('#about'));

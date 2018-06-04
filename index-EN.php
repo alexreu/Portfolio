@@ -99,7 +99,11 @@ session_start();
             </nav>
         </div>
         <!-- fin navbar-pc -->
-    
+        
+        <!-- button retour debut -->
+        <a href="#home"><div id="go-top" class="text-center fixed-bottom ml-auto my-5 mx-5"><i class="fas fa-caret-up fa-3x text-white"></i></div></a>
+        <!-- button retour debut -->
+
         <!-- debut menu mobile -->
         <div class="container-fluid d-block d-sm-block d-md-none d-lg-none d-xl none sticky-top p-0 navbar-mobile">
             <nav class="navbar navbar-expand-sm bg-light">
@@ -234,7 +238,7 @@ session_start();
                 <article class="row m-0">
                     <div class="col-md-4 mt-4">
                         <div class="overlay-img">
-                            <img src="img/portfolio_1.png" alt="organic web" class="img-fluid">
+                            <img src="img/portfolio_1.jpg" alt="organic web" class="img-fluid">
                             <div class="d-flex align-items-center justify-content-center overlay-text" data-toggle="modal" data-target="#modal_portfolio1">
                                 <p class="m-0 mb-2 mr-2">
                                     <i class="text-white fas fa-search-plus fa-lg pt-1"></i>
@@ -254,9 +258,9 @@ session_start();
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <img src="img/portfolio_1.png" alt=" organic web" class="img-fluid">
+                                    <img src="img/portfolio_1.jpg" alt=" organic web" class="img-fluid">
                                     <div class="pt-4 text-center">
-                                        <a class="btn btn-light btn-lg" href="#" role="button">See The Website</a>
+                                        <a class="btn btn-light btn-lg" href="website/OrganicWebBootstrap_Alexandre/index.html" target="_blank" role="button">See The Website</a>
                                         <!-- <a class="btn btn-dark" href="#" role="button">J'aime <i class="far fa-thumbs-up"></i></a> -->
                                     </div>
                                 </div>
@@ -269,7 +273,7 @@ session_start();
                     <!-- fin modal portfolio 1 -->
                     <div class="col-md-4 mt-4">
                         <div class="overlay-img">
-                            <img src="img/portfolio_2.png" alt="anne-esthetik.com" class="img-fluid">
+                            <img src="img/portfolio_2.jpg" alt="anne-esthetik.com" class="img-fluid">
                             <div class="d-flex align-items-center justify-content-center overlay-text"data-toggle="modal" data-target="#modal_portfolio2">
                                 <p class="m-0 mb-2 mr-2">
                                     <i class="text-white fas fa-search-plus fa-lg"></i>
@@ -288,9 +292,9 @@ session_start();
                                     </button>
                                     </div>
                                     <div class="modal-body">
-                                        <img src="img/portfolio_2.png" alt="anne-esthetik.com" class="img-fluid">
+                                        <img src="img/portfolio_2.jpg" alt="anne-esthetik.com" class="img-fluid">
                                         <div class="pt-4 text-center">
-                                            <a class="btn btn-light btn-lg" href="#" role="button">See The Website</a>
+                                            <a class="btn btn-light btn-lg" href="https://www.anne-esthetik.com/" target="_blank" role="button">See The Website</a>
                                             <!-- <a class="btn btn-dark" href="#" role="button">J'aime <i class="far fa-thumbs-up"></i></a> -->
                                         </div>
                                     </div>
@@ -304,7 +308,7 @@ session_start();
                     </div>
                     <div class="col-md-4 mt-4">
                         <div class="overlay-img">
-                            <img src="img/portfolio_1.png" alt="portfolio_1" class="img-fluid">
+                            <img src="img/portfolio_4.jpg" alt="portfolio_1" class="img-fluid">
                             <div class="d-flex align-items-center justify-content-center overlay-text" data-toggle="modal" data-target="#modal_portfolio3">
                                 <p class="m-0 mb-2 mr-2">
                                     <i class="text-white fas fa-search-plus fa-lg"></i>
@@ -317,15 +321,15 @@ session_start();
                             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                    <h5 class="modal-title" id="modal_portfolio3_title">Rephp</h5>
+                                    <h5 class="modal-title" id="modal_portfolio3_title">Reveal</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                     </div>
                                     <div class="modal-body">
-                                        <img src="img/portfolio_1.png" alt="portfolio" class="img-fluid">
+                                        <img src="img/portfolio_4.jpg" alt="portfolio" class="img-fluid">
                                         <div class="pt-4 text-center">
-                                            <a class="btn btn-light btn-lg" href="#" role="button">See The Website</a>
+                                            <a class="btn btn-light btn-lg" href="website/reveal/index.html" target="_blank" role="button">See The Website</a>
                                             <!-- <a class="btn btn-dark" href="#" role="button">J'aime <i class="far fa-thumbs-up"></i></a> -->
                                         </div>
                                     </div>
@@ -357,7 +361,7 @@ session_start();
                 <div class="collapse pl-0 pr-0" id="collapse_portfolio">
                     <article class="row m-0">
                         <div class="col-md-4 mt-4">
-                            <img src="img/portfolio_1.png" alt="portfolio_1" class="img-fluid">
+                            <img src="img/portfolio_3.jpg" alt="portfolio_1" class="img-fluid">
                             <div class="overlay-img">
                                 <div class="d-flex align-items-center justify-content-center overlay-text" data-toggle="modal" data-target="#modal_portfolio7">
                                     <p class="m-0 mb-2 mr-2">
@@ -371,15 +375,15 @@ session_start();
                                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                        <h5 class="modal-title" id="modal_portfolio7_title">Organic. Web</h5>
+                                        <h5 class="modal-title" id="modal_portfolio7_title">Start Boostrap</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                         </div>
                                         <div class="modal-body">
-                                            <img src="img/portfolio_1.png" alt="portfolio" class="img-fluid">
+                                            <img src="img/portfolio_3.jpg" alt="portfolio" class="img-fluid">
                                             <div class="pt-4 text-center">
-                                                <a class="btn btn-light btn-lg" href="#" role="button">See The Website</a>
+                                                <a class="btn btn-light btn-lg" href="website/landing-page/index.html" target="_blank" role="button">See The Website</a>
                                                 <!-- <a class="btn btn-dark" href="#" role="button">J'aime <i class="far fa-thumbs-up"></i></a> -->
                                             </div>
                                         </div>
@@ -393,7 +397,7 @@ session_start();
                         </div>
                         <div class="col-md-4 mt-4">
                             <div class="overlay-img">
-                                <img src="img/portfolio_1.png" alt="portfolio_1" class="img-fluid">
+                                <img src="img/portfolio_1.jpg" alt="portfolio_1" class="img-fluid">
                                 <div class="d-flex align-items-center justify-content-center overlay-text" data-toggle="modal" data-target="#modal_portfolio8">
                                     <p class="m-0 mb-2 mr-2">
                                         <i class="text-white fas fa-search-plus fa-lg"></i>
@@ -412,9 +416,9 @@ session_start();
                                         </button>
                                         </div>
                                         <div class="modal-body">
-                                            <img src="img/portfolio_1.png" alt="portfolio" class="img-fluid">
+                                            <img src="img/portfolio_1.jpg" alt="portfolio" class="img-fluid">
                                             <div class="pt-4 text-center">
-                                                <a class="btn btn-light btn-lg" href="#" role="button">See The Website</a>
+                                                <a class="btn btn-light btn-lg" href="website/OrganicWebBootstrap_Alexandre/index.html" target="_blank" role="button">See The Website</a>
                                                 <!-- <a class="btn btn-dark" href="#" role="button">J'aime <i class="far fa-thumbs-up"></i></a> -->
                                             </div>
                                         </div>
@@ -428,7 +432,7 @@ session_start();
                         </div>    
                         <div class="col-md-4 mt-4">
                             <div class="overlay-img">
-                                <img src="img/portfolio_1.png" alt="portfolio_1" class="img-fluid">
+                                <img src="img/portfolio_1.jpg" alt="portfolio_1" class="img-fluid">
                                 <div class="d-flex align-items-center justify-content-center overlay-text" data-toggle="modal" data-target="#modal_portfolio9">
                                     <p class="m-0 mb-2 mr-2">
                                         <i class="text-white fas fa-search-plus fa-lg"></i>
@@ -447,9 +451,9 @@ session_start();
                                         </button>
                                         </div>
                                         <div class="modal-body">
-                                            <img src="img/portfolio_1.png" alt="portfolio" class="img-fluid">
+                                            <img src="img/portfolio_1.jpg" alt="portfolio" class="img-fluid">
                                             <div class="pt-4 text-center">
-                                                <a class="btn btn-light btn-lg" href="#" role="button">See The Website</a>
+                                                <a class="btn btn-light btn-lg" href="website/OrganicWebBootstrap_Alexandre/index.html" target="_blank" role="button">See The Website</a>
                                                 <!-- <a class="btn btn-dark" href="#" role="button">J'aime <i class="far fa-thumbs-up"></i></a> -->
                                             </div>
                                         </div>
@@ -627,6 +631,10 @@ session_start();
         </div>
     </section>
     <!-- fin footer -->
+
+    <!-- button retour debut -->
+    <a href="#header"><div id="go-top" class="text-center fixed-bottom ml-auto my-5 mx-5"><i class="fas fa-caret-up fa-3x text-white"></i></div></a>
+    <!-- button retour debut -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
