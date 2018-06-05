@@ -30,12 +30,13 @@ body{
 }
 /* debut loader */
 #loader {
-    position: fixed;
+    position: fixed !important;
+    top: 0;
+    left: 0;
     height: 100vh;
     width: 100%;
-    z-index: 3000 !important;
+    z-index: 3000;
     background:#fff;
-    overflow: hidden;
 }
 .loader_container {
     position: relative;

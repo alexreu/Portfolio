@@ -6,13 +6,16 @@ session_start();
 
 <!doctype html>
 <html lang="fr">
-
 <head>
     <title>Alexandre ADOOLPHE - Developpeur Web Ile de la Réunion</title>
     <meta name="description" content="Developpeur web junior à l'île de la Réunion, je vous présentes mes differents projets ainsi que le moyen de me contacter">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:title" content="Alexandre ADOOLPHE - Developpeur Web Ile de la Réunion">
+    <meta property="og:description" content="Developpeur web junior à l'île de la Réunion, je vous présentes mes differents projets ainsi que le moyen de me contacter">
+    <meta property="og:url" content="https://alexandreadolphe.com">
+    <meta property="og:image" content="img/logo.png">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <!-- Font awesomme css -->
@@ -88,12 +91,12 @@ session_start();
                         <li class="nav-item">
                             <a id="navContact" href="#contact" class="nav-link font-weight-bold text-uppercase nav_link_color">Contact</a>
                         </li>
-                        <li class="nav-item pl-2 pt-1">
+                        <!-- <li class="nav-item pl-2 pt-1">
                            <a href="index.php" data-toggle="tooltip" data-placement="bottom" title="French version / Version Française"><img src="img/fr-flag.png" alt="drapeau français" class="img-fluid" width="20" height="20">  </a>          
                         </li>
                         <li class="nav-item pl-2 pt-1">
                             <a href="index-EN.php" data-toggle="tooltip" data-placement="bottom" title="English version / Version Anglaise"><img src="img/us-flag.png" alt="drapeau américain" class="img-fluid" width="20" height="20"></a>        
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </nav>
@@ -131,12 +134,12 @@ session_start();
                         <li class="nav-item">
                             <a id="navContactMobile" class="nav-link font-weight-bold text-uppercase nav_link_color">Contact</a>
                         </li>
-                        <li class="nav-item pl-2 pt-1">
+                        <!-- <li class="nav-item pl-2 pt-1">
                             <a href="index.php"><img src="img/fr-flag.png" alt="drapeau français" class="img-fluid" width="30" height="30"><span class="nav_link_color pl-2 font-weight-bold ">FR</span></a>          
                         </li>
                         <li class="nav-item pl-2 pt-1">
                             <a href="index-EN.php"><img src="img/us-flag.png" alt="drapeau américain" class="img-fluid" width="30" height="30"><span class="nav_link_color pl-2 font-weight-bold">US</span></a>        
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </nav>
@@ -174,8 +177,6 @@ session_start();
                                 <p class="text-muted pt-3 text-uppercase">
                                     css3
                                     <br>
-                                    <span class="yellow"><\></span>
-                                    <br>
                                     bootstrap 4
                                 </p>
                             </div>
@@ -184,20 +185,18 @@ session_start();
                                     <p class="text-muted pt-3 text-uppercase">
                                         JavaScript
                                         <br>
-                                        <span class="yellow"><\></span>
-                                        <br>
                                         jquery
                                     </p>  
                                 </div>
                                 <div class="col-12 col-md-3 text-center icon_about">
                                     <i class="fas fa-database yellow fa-5x"></i>
                                     <p class="text-muted pt-3 text-uppercase">
-                                        notion mysql
+                                        mysql
                                     </p>
                             </div>
                         </div>
                         <div class="row justify-content-center pt-5 pb-5">
-                            <a href="#" class="w-100 text-center">
+                            <a href="doc/CV Alexandre ADOLPHE.pdf" target="_blank" class="w-100 text-center">
                                 <button class="btn w-25 text-white bg-yellow">Voir CV</button>
                             </a>
                         </div>
@@ -256,6 +255,9 @@ session_start();
                                 <div class="modal-body">
                                     <img src="img/portfolio_1.jpg" alt=" organic web" class="img-fluid">
                                     <div class="pt-4 text-center">
+                                        <p>
+                                            Intégration Web avec Bootstrap / Responsive
+                                        </p>
                                         <a class="btn btn-light btn-lg" href="website/OrganicWebBootstrap_Alexandre/index.html" target="_blank" role="button">Voir le site</a>
                                         <!-- <a class="btn btn-dark" href="#" role="button">J'aime <i class="far fa-thumbs-up"></i></a> -->
                                     </div>
@@ -290,6 +292,9 @@ session_start();
                                     <div class="modal-body">
                                         <img src="img/portfolio_2.jpg" alt="anne-esthetik.com" class="img-fluid">
                                         <div class="pt-4 text-center">
+                                            <p>
+                                                Création d'un site présentant l'activité d'Anne Esthetik / Front-end et Back-end / Responsive 
+                                            </p>
                                             <a class="btn btn-light btn-lg" href="https://www.anne-esthetik.com/" target="_blank" role="button">Voir le site</a>
                                             <!-- <a class="btn btn-dark" href="#" role="button">J'aime <i class="far fa-thumbs-up"></i></a> -->
                                         </div>
@@ -325,6 +330,9 @@ session_start();
                                     <div class="modal-body">
                                         <img src="img/portfolio_4.jpg" alt="reveal" class="img-fluid">
                                         <div class="pt-4 text-center">
+                                            <p>
+                                                Intégration Web avec Bootstrap / Responsive
+                                            </p>
                                             <a class="btn btn-light btn-lg" href="website/reveal/index.html" target="_blank" role="button">Voir le site</a>
                                             <!-- <a class="btn btn-dark" href="#" role="button">J'aime <i class="far fa-thumbs-up"></i></a> -->
                                         </div>
@@ -396,6 +404,9 @@ session_start();
                                         <div class="modal-body">
                                             <img src="img/portfolio_3.jpg" alt="start bootstrap" class="img-fluid">
                                             <div class="pt-4 text-center">
+                                                <p>
+                                                    Intégration Web avec Bootstrap / Responsive
+                                                </p>
                                                 <a class="btn btn-light btn-lg" href="website/landing-page/index.html" target="_blank" role="button">Voir le site</a>
                                                 <!-- <a class="btn btn-dark" href="#" role="button">J'aime <i class="far fa-thumbs-up"></i></a> -->
                                             </div>
@@ -466,6 +477,9 @@ session_start();
                                         <div class="modal-body">
                                             <img src="img/portfolio_1.jpg" alt="portfolio" class="img-fluid">
                                             <div class="pt-4 text-center">
+                                                <p>
+                                                    Intégration Web avec Bootstrap / Responsive
+                                                </p>
                                                 <a class="btn btn-light btn-lg" href="website/OrganicWebBootstrap_Alexandre/index.html" target="_blank" role="button">Voir le site</a>
                                                 <!-- <a class="btn btn-dark" href="#" role="button">J'aime <i class="far fa-thumbs-up"></i></a> -->
                                             </div>
@@ -545,7 +559,7 @@ session_start();
             </div>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-5 offset-md-1">
+                    <div class="col-md-6 offset-md-3">
                         <?php if (array_key_exists('errors', $_SESSION)) : ?>
                         <div class="col-md-12 pr-0 pl-0">
                             <div class="alert alert-danger">
@@ -573,7 +587,12 @@ session_start();
             </div>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-5 offset-md-1">
+                    <div class="col-md-6 offset-md-3">
+                        <div class="col-md-12 d-flex align-items-center text-center contact_content ">
+                            <p>
+                                N'hesitez pas à me <a href="mailto:contact@alexandreadolphe.com" class="yellow">contacter</a> pour tout renseignement supplémentaire <i class="fas fa-paper-plane yellow"></i>
+                            </p>
+                        </div>
                         <form action="app/mail.php" method="post" id="contactForm">
                             <div class="form-group">
                                 <label for="name" class="yellow">Nom Prénom</label>
@@ -594,11 +613,6 @@ session_start();
                             <button type="submit" class="btn btn-lg btn-block bg-yellow text-white" id="submitForm">Envoyer</button>
                         </form>
                     </div>
-                    <div class="col-md-6 d-flex align-items-center text-center contact_content ">
-                        <p>
-                            N'hesitez pas à me <a href="mailto:contact@alexandreadolphe.com" class="yellow">contacter</a> pour tout renseignement supplémentaire <i class="fas fa-paper-plane yellow"></i>
-                        </p>
-                    </div>
                 </div>
             </div>
         </section>
@@ -612,7 +626,7 @@ session_start();
             <div class="col-md-6 offset-md-3 text-center footer_title">
                 <h1 class="yellow text-uppercase"><i class="fab fa-connectdevelop"></i> Réseaux Sociaux</h1>
             </div>
-            <div class="row footer_content">
+            <div class="footer_content">
                 <div class="col-md-6 offset-md-3 text-center">
                     <div class="row  justify-content-center align-items-center">
                         <div class="col-4 col-md-3 col-lg-2 pb-3">
