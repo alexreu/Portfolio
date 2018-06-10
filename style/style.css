@@ -458,7 +458,34 @@ nav {
     top: 28px;
 }
 .contact_title h1:hover::before{
-    animation: border_5 0.8s forwards;
+    animation: border_12 0.8s forwards;
+}
+
+@keyframes border_12 {
+    0%{
+        height: 0%;
+        width: 0%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    50%{
+        height: 0%;
+        width: 60%;
+        border-top-color: #FFD600;
+        border-right-color: #FFD600;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    100%{
+        height: 60%;
+        width: 60%;
+        border-top-color: #FFD600;
+        border-right-color:  #FFD600;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
 }
 .contact_title h1::after {
     content: '';
@@ -470,9 +497,37 @@ nav {
     left: 21%;
     top: 28px;
 }
+
 .contact_title h1:hover::after {
-    animation: border_6 0.8s forwards;                         
+    animation: border_15 0.8s forwards;                         
 }
+@keyframes border_15 {
+    0%{
+        height: 0%;
+        width: 0%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    50%{
+        height: 60%;
+        width: 0%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: #FFD600;
+        border-left-color: #FFD600;
+    }
+    100%{
+        height: 60%;
+        width: 60%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color:  #FFD600;
+        border-left-color: #FFD600;
+    }
+}
+
 .contact_content p {
     font-size: 30px;
 }
@@ -516,9 +571,9 @@ nav {
     left: 23%;
 }
 .footer_title h1:hover::before{
-    animation: border_7 0.8s forwards;
+    animation: border_9 0.8s forwards;
 }
-@keyframes border_7 {
+@keyframes border_9 {
     0%{
         height: 0%;
         width: 0%;
@@ -555,9 +610,9 @@ nav {
     left: 23%;
 }
 .footer_title h1:hover::after{
-    animation: border_8 0.8s forwards;
+    animation: border_10 0.8s forwards;
 }
-@keyframes border_8 {
+@keyframes border_10 {
     0%{
         height: 0%;
         width: 0%;

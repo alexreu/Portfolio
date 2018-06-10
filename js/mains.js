@@ -25,7 +25,7 @@ $(document).ready(function(){
         if($(this).scrollTop() > 50){
             $("#go-top").fadeIn(500).addClass("visible")
         }else{
-            $("#go-top").fadeOut(500).removeClass("visible")
+            $("#go-top").hide(500);
         }
     })
 
@@ -103,5 +103,10 @@ for (let i = 0, f=inputForm.length; i < f ; i++) {
     })
 }
 
-
+/**
+ * scrollReveal
+ */
+window.sr = ScrollReveal({reset: true});
+sr.reveal('.foo', {duration: 1200});
+sr.reveal('.bar', {duraction: 1200});
 

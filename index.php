@@ -7,6 +7,15 @@ session_start();
 <!doctype html>
 <html lang="fr">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107843734-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-107843734-1');
+    </script>
     <title>Alexandre ADOOLPHE - Developpeur Web Ile de la Réunion</title>
     <meta name="description" content="Developpeur web junior à l'île de la Réunion, je vous présentes mes differents projets ainsi que le moyen de me contacter">
     <!-- Required meta tags -->
@@ -148,14 +157,14 @@ session_start();
     
         <!-- debut about -->
         <section id="about">
-            <div class="container">
+            <div class="container foo">
                 <div class="col-md-4 offset-md-4 text-center">
                     <h1 id="titleAbout" class="text-uppercase yellow pb-4 pt-4 pl-2 pr-2 font-weight-bold about_title"><i class="fas fa-user"></i> à-propos</h1>
                 </div>
                 <div class="col-md-6 text-center mx-auto pt-2">
                     <p class="text-muted">
                          Agé de 22 ans et passionné d'informatique et de nouvelles technologies,
-                         je suis actuellement une formation afin de devenir develloppeur web.
+                         je suis actuellement une formation afin de devenir developpeur web.
                     </p>
                 </div>
             </div>
@@ -165,14 +174,15 @@ session_start();
                         <div class="text-center pb-4">
                             <h2 class="text-uppercase yellow font-weight-bold"><i class="fas fa-sync fa-spin mr-2"></i> compétences</h2>
                         </div>
+                        <!-- ligne compétences 1 -->
                         <div class="row justify-content-around pt-5">
-                            <div class="col-12 col-md-3 text-center icon_about">
+                            <div class="col-12 col-md-3 text-center icon_about foo">
                                 <i class="fab fa-html5 fa-5x yellow"></i>
                                 <p class="text-muted pt-3 text-uppercase">
                                     html5
                                 </p>  
                             </div>
-                            <div class="col-12 col-md-3 text-center icon_about">
+                            <div class="col-12 col-md-3 text-center icon_about foo">
                                 <i class="fab fa-css3-alt fa-5x yellow"></i>
                                 <p class="text-muted pt-3 text-uppercase">
                                     css3
@@ -180,7 +190,7 @@ session_start();
                                     bootstrap 4
                                 </p>
                             </div>
-                            <div class="col-12 col-md-3 text-center icon_about">
+                            <div class="col-12 col-md-3 text-center icon_about foo">
                                     <i class="fab fa-js yellow fa-5x"></i>
                                     <p class="text-muted pt-3 text-uppercase">
                                         JavaScript
@@ -188,20 +198,51 @@ session_start();
                                         jquery
                                     </p>  
                                 </div>
-                                <div class="col-12 col-md-3 text-center icon_about">
+                                <div class="col-12 col-md-3 text-center icon_about foo">
                                     <i class="fas fa-database yellow fa-5x"></i>
                                     <p class="text-muted pt-3 text-uppercase">
                                         mysql
                                     </p>
                             </div>
                         </div>
+                        <!-- fin ligne compétences 1 -->
+                        <!-- ligne compétences 2 -->
+                        <div class="row justify-content-around pt-5">
+                            <div class="col-12 col-md-3 text-center icon_about foo">
+                                <i class="fab fa-node-js fa-5x yellow"></i>
+                                <p class="text-muted pt-3 text-uppercase">
+                                    nodeJs
+                                </p>  
+                            </div>
+                            <div class="col-12 col-md-3 text-center icon_about foo">
+                                <i class="fas fa-code fa-5x yellow"></i>
+                                <p class="text-muted pt-3 text-uppercase">
+                                    Visual Studio Code
+                                    <br>
+                                    Php Storm
+                                </p>
+                            </div>
+                            <div class="col-12 col-md-3 text-center icon_about foo">
+                                    <i class="fab fa-npm yellow fa-5x"></i>
+                                    <p class="text-muted pt-3 text-uppercase">
+                                        Node Packet Manager
+                                    </p>  
+                                </div>
+                                <div class="col-12 col-md-3 text-center icon_about foo">
+                                    <i class="fab fa-git yellow fa-5x"></i>
+                                    <p class="text-muted pt-3 text-uppercase">
+                                        Git / GitHub
+                                    </p>
+                            </div>
+                        </div>
+                        <!-- fin ligne compétences 2 -->
                         <div class="row justify-content-center pt-5 pb-5">
                             <a href="doc/CV Alexandre ADOLPHE.pdf" target="_blank" class="w-100 text-center">
                                 <button class="btn w-25 text-white bg-yellow">Voir CV</button>
                             </a>
                         </div>
                     </article>
-                    <article class=" col-sm-12 offset-sm-0 col-md-5 offset-md-1 text-center">
+                    <article class=" col-sm-12 offset-sm-0 col-md-5 offset-md-1 text-center foo">
                         <h2 class="text-uppercase yellow font-weight-bold"><i class="fas fa-list mr-2"></i> expériences</h2>
                         <!-- <div class="d-flex justify-content-around pt-5">
                             <h4 class="font-weight-bold">2018 - ****</h4>
@@ -219,6 +260,14 @@ session_start();
                         <hr>
                         <p class="text-muted">Contrat Alternance - Technicien Service Aprés Ventes / Technicien Réseaux</p>
                         <hr>
+                        <div class="d-flex justify-content-around pt-5">
+                            <h4 class="font-weight-bold">2017</h4>
+                            <h4 class="font-weight-bold"><span>/*/</span></h4c>
+                            <h4 class="font-weight-bold">anne-esthetik.com</h4>
+                        </div>
+                        <hr>
+                        <p class="text-muted">Application réalisée avec du html5, css3, js, php et mysQl</p>
+                        <hr>
                     </article>
                 </div>
             </div>
@@ -226,7 +275,7 @@ session_start();
         <!-- fin about -->
         <!-- debut portfolio -->
         <section id="portfolio">
-            <div class="container pt-3 pl-0 pr-0">
+            <div class="container pt-3 pl-0 pr-0 foo">
                 <div class="col-md-4 offset-md-4 text-center pt-5 pb-5 portfolio_title">
                     <h1 class="yellow text-uppercase"><i class="fas fa-clipboard-check"></i> portfolio</h1>
                 </div>
@@ -285,7 +334,7 @@ session_start();
                                 <div class="modal-content myModal-content">
                                     <div class="modal-header myModal-header">
                                     <h5 class="text-secondary" id="modal_portfolio2_title">Anne-esthetik.com</h5>
-                                    <button type="button" class="close yellow" data-dismiss="modal" aria-label="Close">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                     </div>
@@ -421,7 +470,7 @@ session_start();
                         </div>
                         <div class="col-md-4 mt-4">
                             <div class="overlay-img">
-                                <img src="img/portfolio_1.jpg" alt="portfolio_1" class="img-fluid">
+                                <img src="img/portfolio_5.png" alt="Calendrier de l'avant" class="img-fluid">
                                 <div class="d-flex align-items-center justify-content-center overlay-text" data-toggle="modal" data-target="#modal_portfolio8">
                                     <p class="m-0 mb-2 mr-2">
                                         <i class="text-white fas fa-search-plus fa-lg"></i>
@@ -434,15 +483,18 @@ session_start();
                                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                        <h5 class="modal-title" id="modal_portfolio8_title">Organic. Web</h5>
+                                        <h5 class="modal-title" id="modal_portfolio8_title">Calendrier de l'avant</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                         </div>
                                         <div class="modal-body">
-                                            <img src="img/portfolio_1.jpg" alt="portfolio" class="img-fluid">
+                                            <img src="img/portfolio_5.png" alt="portfolio" class="img-fluid">
                                             <div class="pt-4 text-center">
-                                                <a class="btn btn-light btn-lg" href="website/OrganicWebBootstrap_Alexandre/index.html" target="_blank" role="button">Voir le site</a>
+                                                <p>
+                                                    Intégration Web avec HTML5 / CSS3 / Responsive
+                                                </p>
+                                                <a class="btn btn-light btn-lg" href="website/calendrier/index.html" target="_blank" role="button">Voir le site</a>
                                                 <!-- <a class="btn btn-dark" href="#" role="button">J'aime <i class="far fa-thumbs-up"></i></a> -->
                                             </div>
                                         </div>
@@ -456,7 +508,7 @@ session_start();
                         </div>    
                         <div class="col-md-4 mt-4">
                             <div class="overlay-img">
-                                <img src="img/portfolio_1.jpg" alt="portfolio_1" class="img-fluid">
+                                <img src="img/portfolio_6.png" alt="portfolio_1" class="img-fluid">
                                 <div class="d-flex align-items-center justify-content-center overlay-text" data-toggle="modal" data-target="#modal_portfolio9">
                                     <p class="m-0 mb-2 mr-2">
                                         <i class="text-white fas fa-search-plus fa-lg"></i>
@@ -475,12 +527,12 @@ session_start();
                                         </button>
                                         </div>
                                         <div class="modal-body">
-                                            <img src="img/portfolio_1.jpg" alt="portfolio" class="img-fluid">
+                                            <img src="img/portfolio_6.png" alt="portfolio" class="img-fluid">
                                             <div class="pt-4 text-center">
                                                 <p>
                                                     Intégration Web avec Bootstrap / Responsive
                                                 </p>
-                                                <a class="btn btn-light btn-lg" href="website/OrganicWebBootstrap_Alexandre/index.html" target="_blank" role="button">Voir le site</a>
+                                                <a class="btn btn-light btn-lg" href="website/challenge/index.html" target="_blank" role="button">Voir le site</a>
                                                 <!-- <a class="btn btn-dark" href="#" role="button">J'aime <i class="far fa-thumbs-up"></i></a> -->
                                             </div>
                                         </div>
@@ -511,38 +563,38 @@ session_start();
                         <h1 class="yellow text-uppercase font-weight-bold pt-3 pb-3"><i class="fas fa-graduation-cap"></i> Parcours</h1>
                     </div>
                     <article class="row text-center p-0">
-                        <div id="test" class="img_formation col-sm-2 offset-sm-1  col-md-2 offset-md-1">
+                        <div id="test" class="img_formation col-sm-2 offset-sm-1  col-md-2 offset-md-1 foo">
                             <a href="https://simplonreunion.co/" target="_blank"><img src="img/simplon.png" alt="simplon" class="img-fluid myImg-fluid"></a>
                             <p class="text-white">
                                 <span class="text-uppercase">simplon reunion</span> <br> 2018 / <span class="yellow">POEC</span> Developpeur Web
                             </p>
                         </div>
-                        <div class="img_formation col-sm-2 col-md-2">
+                        <div class="img_formation col-sm-2 col-md-2 foo">
                             <a href="https://www.reunion.cci.fr/" target="_blank"><img src="img/cci.png" alt="simplon" class="img-fluid myImg-fluid"></a>
                             <p class="text-white">
                                 <span class="text-uppercase">CCI - Reunion</span> <br>
                                 2015 - 2017 / <span class="yellow">CERT</span> - Chargé d'Exploitation en Reseaux et Telecoms 
                             </p>
                         </div>
-                        <div class="img_formation col-sm-2 col-md-2">
+                        <div class="img_formation col-sm-2 col-md-2 foo">
                             <a href="http://www.univ-reunion.fr/" target="_blank"><img src="img/fac.png" alt="simplon" class="img-fluid myImg-fluid"></a>
                             <p class="text-white">
                                 <span class="text-uppercase">université de la reunion</span> <br>
                                 2014 - 2015 / <span class="yellow">L1 MIP</span> Mathématiques Informatique et Physique
                             </p>
                         </div>
-                        <div class="img_formation col-sm-2 col-md-2">
+                        <div class="img_formation col-sm-2 col-md-2 foo">
                             <a href="http://lycee-belair.ac-reunion.fr/" target="_blank"><img src="img/lyc.png" alt="simplon" class="img-fluid myImg-fluid"></a>
                             <p class="text-white">
                                 <span class="text-uppercase">Lycée Bel Air - St Suzanne</span> <br>
                                 2013 - 2014 / <span class="yellow">BAC STI2D - ITEC</span> Innovation Technologique & Eco-Conception
                             </p>
                         </div>
-                        <div class="img_formation col-sm-2 col-md-2 text-center">
+                        <div class="img_formation col-sm-2 col-md-2 text-center foo">
                             <a href="http://college-quartierfrancais.ac-reunion.fr/" target="_blank"><img src="img/clg.png" alt="simplon" class="img-fluid myImg-fluid"></a>
                             <p class="text-white">
                                 <span class="text-uppercase">College Lucet Langenier - St Suzanne</span> <br>
-                                2019 - 2010 / <span class="yellow">Brevet des collèges</span>
+                                2009 - 2010 / <span class="yellow">Brevet des collèges</span>
                             </p>
                         </div>
                     </article>
@@ -588,7 +640,7 @@ session_start();
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6 offset-md-3">
-                        <div class="col-md-12 d-flex align-items-center text-center contact_content ">
+                        <div class="col-md-12 d-flex justify-content-center contact_content ">
                             <p>
                                 N'hesitez pas à me <a href="mailto:contact@alexandreadolphe.com" class="yellow">contacter</a> pour tout renseignement supplémentaire <i class="fas fa-paper-plane yellow"></i>
                             </p>
@@ -626,7 +678,7 @@ session_start();
             <div class="col-md-6 offset-md-3 text-center footer_title">
                 <h1 class="yellow text-uppercase"><i class="fab fa-connectdevelop"></i> Réseaux Sociaux</h1>
             </div>
-            <div class="footer_content">
+            <div class="footer_content foo">
                 <div class="col-md-6 offset-md-3 text-center">
                     <div class="row  justify-content-center align-items-center">
                         <div class="col-4 col-md-3 col-lg-2 pb-3">
@@ -646,7 +698,7 @@ session_start();
                     </div>
                 </div>
             </div>
-            <div class="row footer_copyright">
+            <div class="row footer_copyright foo">
                 <div class="col-md-6 offset-md-3 text-center copyright">
                     <p class="text-white">
                         Copyright Alex Developpement 2018 <i class="far fa-copyright"></i> | 
@@ -671,6 +723,7 @@ session_start();
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal@beta/dist/scrollreveal.min.js"></script>
     <script src="js/mains.js"></script>
 </body>
 
